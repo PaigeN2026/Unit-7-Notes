@@ -93,10 +93,13 @@ public class Main {
       bingoNumbers.add(77);
       bingoNumbers.add(13);
       // ENHANCED FOR-EACH LOOP
-      int total = 0
+      int total = 0;
+      int product = 1;
       for (Integer num : bingoNumbers) {
          total = total + num; // same as total += num
+         product *= num;
       }
       System.out.println("Sum of bingo numbers: " + total);
+      System.out.println("Product of bingo numbers: " + product);
    }
 }
